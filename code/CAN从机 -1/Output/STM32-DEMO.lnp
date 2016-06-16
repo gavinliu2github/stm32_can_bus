@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+"..\output\startup_stm32f10x_hd.o"
+"..\output\main.o"
+"..\output\stm32f10x_it.o"
+"..\output\can.o"
+"..\output\usart1.o"
+"..\output\dht11.o"
+"..\output\systick.o"
+"..\output\misc.o"
+"..\output\stm32f10x_can.o"
+"..\output\stm32f10x_gpio.o"
+"..\output\stm32f10x_rcc.o"
+"..\output\stm32f10x_usart.o"
+"..\output\core_cm3.o"
+"..\output\system_stm32f10x.o"
+--library_type=microlib --strict --scatter "..\Output\STM32-DEMO.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\Listing\STM32-DEMO.map" -o ..\Output\STM32-DEMO.axf
